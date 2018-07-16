@@ -1,0 +1,27 @@
+%% ShapeFunctions
+% Evaluates the shape functions and their derivatives at a point x
+% in which L is the element length
+%
+% note L>0 and 0<=x<=L
+function [N, dN] = ShapeFunctions(x,L)
+
+N = zeros(1,4); % N-matrix
+dN = zeros(1,4); % B-matrix
+
+% Shape functions
+N(1) = 1/L^3*(2*x^3-3*x^2*L+L^3);
+
+N(2) = 1/L^3*(L*x^3-2*x^2*L^2+x*L^3);
+
+N(3) = 1/L^3*(-2*x^3+3*x^2*L);
+
+N(4) = 1/L^3*(L*x^3-x^2*L^2);
+
+%Shape function derivatives
+dN(1) = ( 6*x^2 - 6*L*x)/L^3; % dN1dx
+
+dN(2) = (L^3 - 4*L^2*x + 3*L*x^2)/L^3;% dN2dx
+
+dN(3) = (- 6*x^2 + 6*L*x)/L^3;% dN3dx
+
+dN(4) = (- 2*L^2*x + 3*L*x^2)/L^3;% dN4dx
