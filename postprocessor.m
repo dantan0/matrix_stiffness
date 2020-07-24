@@ -1,6 +1,6 @@
 % Postprocessing function
 %
-%Inputs
+% Inputs
 % 
 % d = nodal displacement vector 
 % r = vecotr of nodal reactions
@@ -59,10 +59,8 @@ for e=1:nel
     hold on;
     
     %% compute the moment at the midspan (x=L/2) of each element
-     
     M = 0;
     disp(['Element ',num2str(e),' midspan bending moment ',num2str(M,'%8.4e'),'       ',num2str(d(2*n),'%8.4e')]);
-    
 end
 
 plot_beam 	= 'yes';
