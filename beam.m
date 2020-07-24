@@ -3,7 +3,7 @@
 % Reference Chapter 16 - Fundamentals of Structural Analysis, Leet et al.
 % Reference Chapter 10 - A first course in finite elements by Fish and Belytschko)  
 % Reference Chapter 4 - A first course in the finite element method by Logan)
-% Dr. Robert Gracie, University of Waterloo, Waterloo, 2018
+% Authors: Shi Jie Tan, Robert Gracie
 %*************************************************************************
 close all; 
  
