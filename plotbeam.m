@@ -8,8 +8,8 @@ if strcmpi(plot_beam,'yes')==1
     for e = 1:nel
         XX = [x(conn(e,1)) x(conn(e,2))  ];
         YY = [y(conn(e,1)) y(conn(e,2))  ];
-        line(XX,YY,'LineWidth',2);hold on;
-        
+        line(XX,YY,'LineWidth',2);
+        hold on;
     end
 end
 
@@ -19,6 +19,7 @@ if strcmpi(plot_nod,'yes')==1
         text(x(n),y(n),sprintf('%0.5g',n),'Color','red','FontSize',14);
     end
 end
+
 title('Beam Plot');
 end
 
