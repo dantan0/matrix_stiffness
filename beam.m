@@ -23,14 +23,11 @@ nnd     = length(x);  % Number of nodes
 nel     = size(conn,1);  % Number of elements
 neq     = nnd*ndof;   % number of equations (dofs)
 
-
- 
 f 	= zeros(neq,1);           % Initialize vector of external forces at nodes
 d 	= zeros(neq,1);   % Initialize vectr of nodal displacements
 K = zeros(neq,neq);     % Initialize stiffness matrix
 % large faster computation for large systems relpalce with 
 % K 	= sparse(neq,neq);     % Initialize stiffness matrix
-
 
 %% Calculation and assembly of the global stiffness matrix
 for e = 1:nel    
