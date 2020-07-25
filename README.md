@@ -4,3 +4,5 @@ This MATLAB program demonstrates the use of the direct stiffness method for stru
 The direct stiffness method is by far the most common method for commercial finite element software and originated from the field of aerospace engineering. 
 
 Wikipedia provides an explanation of this methodology: https://en.wikipedia.org/wiki/Direct_stiffness_method. 
+
+Authors: Shi Jie Tan, Robert Gracie (starter code)
